@@ -1,9 +1,7 @@
-FROM ubuntu:22.04
+# FROM ubuntu:22.04
+FROM rapidsai/rapidsai
 
-SHELL [ "/bin/bash", "-c" ]
-
-# ARG PYTHON_VERSION_TAG=3.8
-# ARG LINK_PYTHON_TO_PYTHON3=1
+# SHELL [ "/bin/bash", "-c" ]
 
 RUN apt-get -qq -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get -qq -y install \
@@ -23,14 +21,14 @@ RUN apt-get -qq -y update && \
         rm -rf /var/lib/apt/lists/*
 
 # Install Minicond
-RUN wget \
-    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-    && mkdir /root/.conda \
-    && bash Miniconda3-latest-Linux-x86_64.sh -b \
-    && rm -f Miniconda3-latest-Linux-x86_64.sh 
+# RUN wget \
+#     https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+#     && mkdir /root/.conda \
+#     && bash Miniconda3-latest-Linux-x86_64.sh -b \
+#     && rm -f Miniconda3-latest-Linux-x86_64.sh 
 
 # Put conda in path so we can use conda activate
-ENV PATH=$CONDA_DIR/bin:$PATH
+# ENV PATH=$CONDA_DIR/bin:$PATH
 
 # Enable tab completion by uncommenting it from /etc/bash.bashrc
 # The relevant lines are those below the phrase "enable bash completion in interactive shells"
