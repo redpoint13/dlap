@@ -9,8 +9,6 @@
     "macro_feature_file": "datasets/macro/macro_train.npz",
     "use_rnn": true,
     "weighted_loss": true,
-
-    // Is this a sufficient number of layers to price an asset?
     "hidden_dim": [
         64,
         64
