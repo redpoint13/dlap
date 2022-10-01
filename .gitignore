@@ -1,3 +1,7 @@
 *.csv
+*.pyc
 docs/*
 data/*
+datasets/*
+output/*
+
