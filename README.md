@@ -5,7 +5,7 @@
 * Python 3.6
 
 ## Example Code
-### Step 1: Training the SDF network
+### Step 1: Training the Stochasitic Discount Factor ("SDF") network
 	$ python3 run.py --config=config/config.json --logdir=output --saveBestFreq=128 --printOnConsole=True --saveLog=True --ignoreEpoch=32
 
 ### Step 2: Run the first 8 cells of model_GAN.ipynb to generate SDF
