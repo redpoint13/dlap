@@ -3,3 +3,12 @@ jupyter
 seaborn
 statsmodels
 scikit-learn
+# viz during training
+tensorboard
+seaborn
+# linting -- packaging
+black
+poetry 
+# EDA in one line of code
+pandas_profiling
+dtale
